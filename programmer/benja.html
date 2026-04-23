@@ -1,0 +1,64 @@
+<html><head><title>
+    ddddd</title></head>
+    <body>
+        <center>
+            <h3>welcome to our service center</h3><br>
+            <form>enter num1:<br>
+                <input type="text" id="num1"><br>
+                enter num2:<br>
+            
+                <input type="text" id="num2"><br>
+
+<button type="button" onclick="add()">+</button>&nbsp
+<button type="button" onclick="subtract()">-</button>&nbsp
+<button type="button" onclick="div()">/</button>&nbsp
+<button type="button" onclick="product()">*</button>&nbsp
+<button onclick="clear()">clear</button><br>
+<p id="result"></p>
+            <script>
+                function add(){
+                    let x=parseInt(document.getElementById("num1").value);
+                    let y=parseInt(document.getElementById("num2").value);
+                    let sum=x+y;
+                    document.getElementById("result").innerHTML
+                    document.write(sum); 
+                }  
+                     function subtract (){
+                    let x=parseInt(document.getElementById("num1").value);
+                    let y=parseInt(document.getElementById("num2").value);
+                    let subtra=x-y;
+                    document.getElementById("result").innerHTML
+                    document.write(subtra); 
+                }  
+                function div(){
+                    let x=parseInt(document.getElementById("num1").value);
+                    let y=parseInt(document.getElementById("num2").value);
+                    let quot=x/y;
+                    document.getElementById("result").innerHTML
+                    document.write(quot); 
+                }  
+                function product(){
+                    let x=parseInt(document.getElementById("num1").value);
+                    let y=parseInt(document.getElementById("num2").value);
+                    let diff=x*y;
+                    document.getElementById("result").innerHTML
+                    document.write(diff); 
+                }  
+
+                </script>
+
+
+           
+                </center>
+                </body><style>
+                    body{
+                        border-radius:20px ;
+                        background-color: black;
+                        color:green;
+                    }
+                    result:show{
+                        background-color: black;
+
+                    }
+                </style>
+                </html>
